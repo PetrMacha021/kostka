@@ -10,6 +10,7 @@ input.onShake(() => {
         } else {
             number = randint(1, 10);
         }
+        ani(50);
         showNumber(number);
     }
 });
@@ -143,19 +144,75 @@ function showNumber(number: number) {
     }
 }
 
-function ani() {
+function ani(delay: number) {
     basic.showLeds(`
         # . # . #
         . . . . .
         . . . . .
         . . . . .
         . . . . .
-        `, 30);
+        `, delay);
     basic.showLeds(`
         # . # . #
         # . # . #
         . . . . .
         . . . . .
         . . . . .
-        `, 30);
+        `, delay);
+    basic.showLeds(`
+        # . # . #
+        # . # . #
+        # . # . #
+        . . . . .
+        . . . . .
+        `, delay);
+    basic.showLeds(`
+        # . # . #
+        # . # . #
+        # . # . #
+        # . # . #
+        . . . . .
+        `, delay);
+    basic.showLeds(`
+        # . # . #
+        # . # . #
+        # . # . #
+        # . # . #
+        # . # . #
+        `, delay);
+    basic.showLeds(`
+        . . . . .
+        # . # . #
+        # . # . #
+        # . # . #
+        # . # . #
+        `, delay);
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        # . # . #
+        # . # . #
+        # . # . #
+        `, delay);
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        # . # . #
+        # . # . #
+        `, delay);
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        # . # . #
+        `, delay);
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        `, delay);
 }
